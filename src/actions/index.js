@@ -8,9 +8,10 @@ export const heroesFetching = () => {
 };
 
 export const heroesFetched = (heroes) => {
+  // ПОЛУЧАЕТ СПИСОК ГЕРОЕВ В ВИДЕ МАССИВА []
   return {
     type: "HEROES_FETCHED",
-    payload: heroes,
+    payload: heroes, // КАК PAYLOAD СЮДА ДАННЫЕ ПЕРЕДАЕТ (ПОЛУЧАЕТ ВОТ ЗДЕСЬ БУДЕТ МАССИВ ПОЛУЧЕННЫХ ГЕРОЕ [])
   };
 };
 
