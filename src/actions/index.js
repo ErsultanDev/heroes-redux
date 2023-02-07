@@ -1,22 +1,58 @@
 export const heroesFetching = () => {
-  // это функция
-  return {
-    // возвращем обьект у которого тип (HEROES_FETCHING)
-    // ДАЛЬШЕ ЭТО ИДЕТ В РЕДЮСЕР
-    type: "HEROES_FETCHING",
-  };
-};
+    return {
+        type: 'HEROES_FETCHING'
+    }
+}
 
 export const heroesFetched = (heroes) => {
-  // ПОЛУЧАЕТ СПИСОК ГЕРОЕВ В ВИДЕ МАССИВА []
-  return {
-    type: "HEROES_FETCHED",
-    payload: heroes, // КАК PAYLOAD СЮДА ДАННЫЕ ПЕРЕДАЕТ (ПОЛУЧАЕТ ВОТ ЗДЕСЬ БУДЕТ МАССИВ ПОЛУЧЕННЫХ ГЕРОЕ [])
-  };
-};
+    return {
+        type: 'HEROES_FETCHED',
+        payload: heroes
+    }
+}
 
 export const heroesFetchingError = () => {
-  return {
-    type: "HEROES_FETCHING_ERROR",
-  };
-};
+    return {
+        type: 'HEROES_FETCHING_ERROR'
+    }
+}
+
+export const filtersFetching = () => {
+    return {
+        type: 'FILTERS_FETCHING'
+    }
+}
+
+export const filtersFetched = (filters) => {
+    return {
+        type: 'FILTERS_FETCHED',
+        payload: filters
+    }
+}
+
+export const filtersFetchingError = () => {
+    return {
+        type: 'FILTERS_FETCHING_ERROR'
+    }
+}
+
+export const activeFilterChanged = (filter) => {
+    return {
+        type: 'ACTIVE_FILTER_CHANGED',
+        payload: filter
+    }
+}
+
+export const heroCreated = (hero) => {
+    return {
+        type: 'HERO_CREATED',
+        payload: hero
+    }
+}
+
+export const heroDeleted = (id) => {
+    return {
+        type: 'HERO_DELETED',
+        payload: id
+    }
+}
