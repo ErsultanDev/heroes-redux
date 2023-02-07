@@ -58,7 +58,8 @@ const HeroesFilters = () => {
           className={btnClass}
           onClick={() => dispatch(activeFilterChanged(name))}
         >
-          {label}
+          {label }
+          +_+
         </button>
       );
     });
